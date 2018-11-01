@@ -56,4 +56,6 @@ echo countBells('2:00', '3:00'); // output 5
 echo countBells('14:00', '15:00'); // output 5
 echo countBells('14:23', '15:42'); // output 3
 echo countBells('23:00', '1:00'); // output 24
+// echo countBells('14:52', '16:42'); // output 7
+// echo countBells('22:00', '22:00'); // output 156
 ?>

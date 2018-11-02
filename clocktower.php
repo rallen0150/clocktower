@@ -44,6 +44,10 @@ function countBells($startTime, $endTime) {
   */
   if ($startTime === $endTime) {
     $time = $startHour;
+    // If it's midnight (or 12 am), then the clock hour should be 12 and not 0
+    if ($startHour == 0) {
+      $time = 12;
+    }
     // If it's past noon and before midnight, the chimes should be equivalent to 12 hour format
     if ($time > 12) {
       $time-=12;
